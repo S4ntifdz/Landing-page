@@ -1,21 +1,24 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <!-- <title>Applight Template By W3 Template</title> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="css/animate.css">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!-- Font Google -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GastroQR</title>
-  <link rel="icon" href="images/celular/favicon.ico" type="image/x-icon" />
+  <title>Comanda Ya</title>
+  <link rel="icon" href=" images/Comandaya.png " type="image/x-icon" />
 
 </head>
 
@@ -23,15 +26,16 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img
-          src="images/celular/invertidoGASTRO-removebg-preview.png" alt="logo" class="logo-1"> </a>
+          src=" images/Comandaya_bk.png " alt="logo" class="logo-1"> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
           class="fas fa-bars"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Quienes somos</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://backend.comandaya.app/login/">Iniciar Sesion</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Nuestros servicios</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Caracteristicas</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact0</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Planes</a> </li>
         </ul>
       </div>
     </div>
@@ -48,13 +52,14 @@
               <h5 class="banner-text white">
                 Transforma la experiencia gastronómica de tus clientes con acceso instantáneo al menú, pedidos y pagos
                 directamente desde su mesa.
-                <br>¡Todo con un simple escaneo de QR!
+                <br><br>
+                <strong>¡Todo con un simple escaneo de QR!</strong>
               </h5>
 
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
-            <div class="flip-container" id="flip-container">
+            <div class="flip-container" id="flip-container" onmouseenter="flipCard()" onmouseleave="unflipCard()">
               <div class="flipper">
                 <div class="front">
                   <img src="images/celular/menu-left.png" class="wow fadeInUp enlarged-image"/>
@@ -68,7 +73,6 @@
         </div>
       </div>
     </div>
-    <!-- <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span>   -->
   </section>
 
   <!-------Banner End------->
@@ -94,10 +98,10 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-mobile"
+                <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-robot "
                     aria-hidden="true"></i>
-                  <h5>Bot de Whatsapp</h5>
-                  <p>Automatiza tus reservas con nuestro bot de WhatsApp y optimiza la gestión de mesas en tu local.</p>
+                  <h5>Inteligencia artificial</h5>
+                  <p>Automatiza tus reservas o consultas de clientes con nuestro bot de inteligencia artificial configurable a medida.</p>
                 </div>
               </div>
               <div class="col-md-4">
@@ -113,79 +117,99 @@
   </section>
   <!-------About End------->
 
-  <!-------Video Start------->
-  <section class="video-section prelative text-center white">
-    <div class="section-padding video-overlay">
-      <div class="container">
-        <h3>Un producto de QUINOTO</h3>
-      </div>
-    </div>
-  </section>
-  <!-------Video End------->
-
-  <!-------Features Start------->
-  <section class="feature section-padding" data-scroll-index='2'>
+  <!-------Adaptability Section Start------->
+  <section class="adaptability section-padding" style="background: #f8f9fa;">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="sectioner-header text-center">
-            <h3>Carácteristicas</h3>
+            <h3>Nos adaptamos a tu tipo de negocio</h3>
             <span class="line"></span>
-            <p></p>
+            <p>No importa si tenés mesas, si sos un food truck o una dark kitchen. GastroQR se adapta a cualquier modelo gastronómico</p>
           </div>
-          <div class="section-content text-center">
+          <div class="section-content">
             <div class="row">
-              <div class="col-md-4 col-sm-12">
-                <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="media-body text-right media-right-margin">
-                    <h5>Pagos en tiempo real</h5>
-                    <p>Los clientes pagan solos. Podras libera a tus mozos para que se enfoquen en brindar un mejor
-                      servicio.</p>
-                  </div>
-                  <div class="media-right icon-border"> <span class="fa fa-bolt" aria-hidden="true"></span> </div>
-                </div>
-                <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
-                  <div class="media-body text-right media-right-margin">
-                    <h5>Transparencia total</h5>
-                    <p>Tus clientes pueden seguir el estado de su pedido en tiempo real.</p>
-                  </div>
-                  <div class="media-right icon-border"> <span class="fa fa-lock" aria-hidden="true"></span> </div>
-                </div>
-                <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
-                  <div class="media-body text-right media-right-margin">
-                    <h5>Conexión sin límites</h5>
-                    <p>Tus clientes no necesitan estar conectados a tu WiFi para disfrutar de nuestros servicios.</p>
-                  </div>
-                  <div class="media-right icon-border"> <span class="fa fa-wifi" aria-hidden="true"></span> </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="adaptability-item wow fadeInUp" data-wow-delay="0.1s">
+                  <i class="fas fa-utensils"></i>
+                  <h5>Restaurantes</h5>
+                  <p>Gestión completa de mesas, pedidos y pagos para restaurantes tradicionales</p>
                 </div>
               </div>
-              <div class="col-md-4 d-none d-md-block d-lg-block">
-                <div class="feature-mobile"> <img src="images/celular/main.png" class="img-fluid wow fadeInUp" /> </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="adaptability-item wow fadeInUp" data-wow-delay="0.2s">
+                  <i class="fas fa-truck"></i>
+                  <h5>Food Trucks</h5>
+                  <p>Sistema de pedidos móvil perfecto para negocios ambulantes y eventos</p>
+                </div>
               </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double"
-                      aria-hidden="true"></span> </div>
-                  <div class="media-body text-left">
-                    <h5>Atención personalizada</h5>
-                    <p>Tus clientes pueden llamar a un mozo con un solo clic, y recibirás una alerta en tu dashboard.
-                    </p>
+              <div class="col-md-3 col-sm-6">
+                <div class="adaptability-item wow fadeInUp" data-wow-delay="0.3s">
+                  <i class="fas fa-home"></i>
+                  <h5>Dark Kitchens</h5>
+                  <p>Optimizado para cocinas de delivery sin atención presencial</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="adaptability-item wow fadeInUp" data-wow-delay="0.4s">
+                  <i class="fas fa-shopping-bag"></i>
+                  <h5>Take Away</h5>
+                  <p>Pedidos rápidos para retiro en local sin necesidad de mesas</p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <!-- <div class="col-md-3 col-sm-6">
+                <div class="adaptability-item wow fadeInUp" data-wow-delay="0.5s">
+                  <i class="fas fa-coffee"></i>
+                  <h5>Cafeterías</h5>
+                  <p>Ideal para cafés y espacios de coworking</p>
+                </div>
+              </div> -->
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------Adaptability Section End------->
+
+  <!-------Video Start------->
+  <section class="video-section prelative text-center white">
+    <div class="section-padding video-overlay">
+      <div class="container">
+        <h3>Tecnología que impulsa tu negocio</h3>
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="features-table">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="feature-item">
+                    <i class="fas fa-qrcode fa-2x mb-3"></i>
+                    <h5>Códigos QR</h5>
+                    <p>Acceso instantáneo al menú desde cualquier mesa, carpa, totem, etc.</p>
                   </div>
                 </div>
-                <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
-                  <div class="media-left icon-border media-right-margin"> <span class="fa fa-dollar-sign"
-                      aria-hidden="true"></span> </div>
-                  <div class="media-body text-left">
-                    <h5>Pagos seguros</h5>
-                    <p>Tus clientes pueden pagar utilizando las billeteras virtuales más confiables.</p>
+                <div class="col-md-3 col-sm-6">
+                  <div class="feature-item">
+                    <i class="fas fa-mobile-alt fa-2x mb-3"></i>
+                    <h5>App Móvil</h5>
+                    <p>Interfaz optimizada para todos los dispositivos</p>
                   </div>
                 </div>
-                <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
-                  <div class="media-left icon-border media-right-margin"> <span class="fa fa-binoculars"
-                      aria-hidden="true"></span> </div>
-                  <div class="media-body text-left">
-                    <h5>Control total</h5>
-                    <p>Monitorea el estado de todas las mesas en tiempo real, desde ocupadas hasta pagadas.</p>
+                <div class="col-md-3 col-sm-6">
+                  <div class="feature-item">
+                    <i class="fas fa-chart-line fa-2x mb-3"></i>
+                    <h5>Dashboard</h5>
+                    <p>Control total de ventas y estadísticas en tiempo real</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="feature-item">
+                    <i class="fas fa-robot fa-2x mb-3"></i>
+                    <h5>Bot IA</h5>
+                    <p>Automatización de reservas y atención al cliente</p>
                   </div>
                 </div>
               </div>
@@ -195,7 +219,80 @@
       </div>
     </div>
   </section>
-  <!-------Features End------->
+  <!-------Video End------->
+  
+<!-------Features Start------->
+<section class="feature section-padding" data-scroll-index='2'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center">
+          <h3>Características</h3>
+          <span class="line"></span>
+          <p>Un aliado para llevar la experiencia de tu local al siguiente nivel.</p>
+        </div>
+        <div class="section-content text-center">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                <div class="media-body text-right media-right-margin">
+                  <h5>Autonomía para tus clientes</h5>
+                  <p>Permite que los clientes pidan y paguen desde su celular, mientras tu equipo se concentra en la experiencia.</p>
+                </div>
+                <div class="media-right icon-border"> <span class="fa fa-bolt" aria-hidden="true"></span> </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                <div class="media-body text-right media-right-margin">
+                  <h5>Pedidos en vivo</h5>
+                  <p>Los clientes siguen el progreso de su orden en tiempo real, sin necesidad de preguntar al mozo.</p>
+                </div>
+                <div class="media-right icon-border"> <span class="fa fa-lock" aria-hidden="true"></span> </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                <div class="media-body text-right media-right-margin">
+                  <h5>Propinas transparentes</h5>
+                  <p>El cliente elige la propina y el sistema la acredita directamente al mozo, sin intermediarios.</p>
+                </div>
+                <div class="media-right icon-border"> <span class="fa fa-dollar-sign" aria-hidden="true"></span> </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block d-lg-block">
+              <div class="feature-mobile"> <img src=" images/celular/main.png " class="img-fluid wow fadeInUp" /> </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double"
+                    aria-hidden="true"></span> </div>
+                <div class="media-body text-left">
+                  <h5>Atención al instante</h5>
+                  <p>Con un clic, el cliente puede llamar al mozo y recibirás una notificación directa en el dashboard.</p>
+                </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-dollar-sign"
+                    aria-hidden="true"></span> </div>
+                <div class="media-body text-left">
+                  <h5>Pagos sin fricción</h5>
+                  <p>Integra los métodos más usados: QR interoperable, billeteras virtuales y transferencias seguras.</p>
+                </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-binoculars"
+                    aria-hidden="true"></span> </div>
+                <div class="media-body text-left">
+                  <h5>Visión completa del salón</h5>
+                  <p>Monitorea el estado de cada mesa en tiempo real: libres, ocupadas, en proceso o pagadas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-------Features End------->
+
 
 
   <!-------Testimonial Start------->
@@ -206,33 +303,191 @@
           <div class="sectioner-header text-center white">
             <h3>¿Que estas esperando para sumarte?</h3>
             <span class="line"></span>
-            <p class="white">
-            </p>
+            <p class="white">Únete a los cientos de restaurantes que ya transformaron su negocio</p>
+          </div>
+          <div class="section-content text-center">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="benefit-item">
+                  <div class="benefit-number">85%</div>
+                  <h5>Reducción en tiempos de espera</h5>
+                  <p>Los clientes ordenan y pagan sin esperar al mozo</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="benefit-item">
+                  <div class="benefit-number">40%</div>
+                  <h5>Aumento en ventas promedio</h5>
+                  <p>Sugerencias inteligentes incrementan el ticket promedio</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="benefit-item">
+                  <div class="benefit-number">95%</div>
+                  <h5>Satisfacción del cliente</h5>
+                  <p>Experiencia más fluida y moderna</p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <a href="{% url 'demo' %}" class="demo-btn">¡Ya podés probar la demo!</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-------Testimonial End------->
-
-  <!-------FAQ Start------->
-  <section class="faq section-padding prelative" data-scroll-index='5'>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="sectioner-header text-center">
-            
-            <h3> <i class="fas fa-exclamation-triangle fa-lg"></i>	 Pronto podras probar la demo</h3>
-            <span class="line"></span>
-            <!-- <p>Algunas de las dudas que mas nos llegan.</p> -->
-          </div>
-          <div class="section-content">
-          </div>
+<!-------FAQ Start------->
+<section class="faq section-padding prelative" data-scroll-index='5'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <!-- Título -->
+        <div class="sectioner-header text-center">
+          <h3>Planes y Precios</h3>
+          <span class="line"></span>
+          <p>Elige el plan que mejor se adapte a tu negocio.  
+          </p>
         </div>
+
+        <!-- Barra de opciones -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="planTabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="con-mesas-tab" data-toggle="tab" href="#con-mesas" role="tab" aria-controls="con-mesas" aria-selected="true">Con Mesas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="sin-mesas-tab" data-toggle="tab" href="#sin-mesas" role="tab" aria-controls="sin-mesas" aria-selected="false">Sin Mesas</a>
+          </li>
+        </ul>
+
+        <!-- Contenido de los tabs -->
+        <div class="tab-content" id="planTabsContent">
+
+          <!-- PLANES CON MESAS -->
+          <div class="tab-pane fade show active" id="con-mesas" role="tabpanel" aria-labelledby="con-mesas-tab">
+            <div class="section-content">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="pricing-card">
+                    <h4>Básico</h4>
+                    <div class="price">$165<span>/año</span></div>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Hasta 5 mesas</li>
+                      <li><i class="fas fa-check"></i> Menú digital</li>
+                      <li><i class="fas fa-check"></i> Pagos QR</li>
+                      <li><i class="fas fa-check"></i> Soporte básico</li>
+                    </ul>
+                    <a href="pricing.html" class="pricing-btn">Ver más detalles</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pricing-card featured">
+                    <div class="popular-badge">Más Popular</div>
+                    <h4>Profesional</h4>
+                    <div class="price">$200<span>/año</span></div>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Hasta 20 mesas</li>
+                      <li><i class="fas fa-check"></i> Dashboard completo</li>
+                      <li><i class="fas fa-check"></i> Bot IA</li>
+                      <li><i class="fas fa-check"></i> Reportes avanzados</li>
+                      <li><i class="fas fa-check"></i> Soporte prioritario</li>
+                    </ul>
+                    <a href="pricing.html" class="pricing-btn">Ver más detalles</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pricing-card">
+                    <h4>Enterprise</h4>
+                    <div class="price">$250.000<span>/año</span></div>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Mesas ilimitadas</li>
+                      <li><i class="fas fa-check"></i> Múltiples sucursales</li>
+                      <li><i class="fas fa-check"></i> IA personalizada</li>
+                      <li><i class="fas fa-check"></i> Integración completa</li>
+                      <li><i class="fas fa-check"></i> Soporte 24/7</li>
+                    </ul>
+                    <a href="pricing.html" class="pricing-btn">Ver más detalles</a>
+                  </div>
+                </div>
+
+                <!-- Cotización personalizada -->
+  
+        <div class="sectioner-price-footer text-center">
+          <span class="line"></span>
+          <h6>No encontras un plan que se adapte a tu negocio? <strong>¡No hay problema!</strong> contactanos y solicitá tu 
+            <a href="#cotizacion" class="text-primary font-weight-bold">cotización personalizada</a>.</h6>
+        </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- PLANES SIN MESAS -->
+          <div class="tab-pane fade" id="sin-mesas" role="tabpanel" aria-labelledby="sin-mesas-tab">
+            <div class="section-content">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="pricing-card">
+                    <h4>Starter</h4>
+                    <div class="price">$100<span>/año</span></div>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Menú digital</li>
+                      <li><i class="fas fa-check"></i> Pedidos online</li>
+                      <li><i class="fas fa-check"></i> Soporte básico</li>
+                    </ul>
+                    <a href="pricing.html" class="pricing-btn">Ver más detalles</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pricing-card featured">
+                    <div class="popular-badge">Más Vendido</div>
+                    <h4>Pro Online</h4>
+                    <div class="price">$180<span>/año</span></div>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Tienda online</li>
+                      <li><i class="fas fa-check"></i> Integración con IA</li>
+                      <li><i class="fas fa-check"></i> Reportes básicos</li>
+                      <li><i class="fas fa-check"></i> Soporte prioritario</li>
+                    </ul>
+                    <a href="pricing.html" class="pricing-btn">Ver más detalles</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pricing-card">
+                    <h4>Ultimate Online</h4>
+                    <div class="price">$300<span>/año</span></div>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Marketplace integrado</li>
+                      <li><i class="fas fa-check"></i> SEO avanzado</li>
+                      <li><i class="fas fa-check"></i> Marketing automatizado</li>
+                      <li><i class="fas fa-check"></i> Soporte 24/7</li>
+                    </ul>
+                    <a href="pricing.html" class="pricing-btn">Ver más detalles</a>
+                  </div>
+                </div>
+
+        <div class="sectioner-price-footer text-center">
+          <span class="line"></span>
+          <p>No encontras un plan que se adapte a tu negocio? ¡No hay problema! contactanos y solicitá tu <a href="#cotizacion" class="text-primary font-weight-bold">cotización personalizada</a>.</p>
+        </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div><!-- tab-content -->
+
       </div>
     </div>
-    </div>
-  </section>
+  </div>
+</section>
+
+<!-------FAQ End------->
+
   <!-------FAQ End------->
 
 
@@ -255,14 +510,14 @@
         <div class="col-md-12">
           <div class="section-content text-center">
             <div >
-              <p><h6><i class="fas fa-envelope"></i> santiago.fernandez.utn@gmail.com </h6></p>
-              <p><h6><i class="fas fa-phone"></i> +54336401295</h6></p>
+              <p><h6><a href="https://www.argonglobal.tech/es"> Argon Global Tech</a> </h6></p>
+              <p><h6><a href="https://quinoto.tech/es/">Quinoto Tech </a> </h6></p>
               <!-- <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Ciudad, País</p> -->
             </div>
-            <ul>
-              <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a></li>
-              <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a></li>
-            </ul>
+            <!-- <ul>
+              <li><a href="#"><img src="{% static 'images/appstore.png' %}" class="wow fadeInUp" data-wow-delay="0.4s" /></a></li>
+              <li><a href="#"><img src="{% static 'images/playstore.png' %}" class="wow fadeInUp" data-wow-delay="0.7s" /></a></li>
+            </ul> -->
 
           </div>
         </div>
@@ -289,11 +544,28 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <!-- scrollIt js -->
-  <script src="js/scrollIt.min.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src=" js/scrollIt.min.js "></script>
+  <script src=" js/wow.min.js "></script>
   <script>
     wow = new WOW();
     wow.init();
+    
+    let isFlipped = false;
+    
+    function flipCard() {
+      if (!isFlipped) {
+        document.getElementById('flip-container').classList.add('flipped');
+        isFlipped = true;
+      }
+    }
+    
+    function unflipCard() {
+      if (isFlipped) {
+        document.getElementById('flip-container').classList.remove('flipped');
+        isFlipped = false;
+      }
+    }
+    
     $(document).ready(function (e) {
 
       $('#video-icon').on('click', function (e) {
@@ -323,11 +595,11 @@
         navbar = $(".navbar");
 
       if (bodyScroll > 50) {
-        $('.navbar-logo img').attr('src', 'images/celular/Fondo.png');
+        $('.navbar-logo img').attr('src', 'images/Comandaya.png');
         navbar.addClass("nav-scroll");
 
       } else {
-        $('.navbar-logo img').attr('src', 'images/celular/invertidoGASTRO-removebg-preview.png');
+        $('.navbar-logo img').attr('src', 'images/Comandaya_bk.png ');
         navbar.removeClass("nav-scroll");
       }
 
@@ -337,10 +609,10 @@
         navbar = $(".navbar");
 
       if (bodyScroll > 50) {
-        $('.navbar-logo img').attr('src', 'images/celular/Fondo.png');
+        $('.navbar-logo img').attr('src', 'images/Comandaya.png ');
         navbar.addClass("nav-scroll");
       } else {
-        $('.navbar-logo img').attr('src', 'images/logo-white.png');
+        $('.navbar-logo img').attr('src', 'images/logo-white.png ');
         navbar.removeClass("nav-scroll");
       }
 
